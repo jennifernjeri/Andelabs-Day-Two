@@ -1,0 +1,10 @@
+def find_max_min(y):
+  
+  min(y)
+  max(y)
+ 
+  if min(y)==max(y):
+    return [min(y)]
+    
+  return[min(y), max(y)]
+ 
