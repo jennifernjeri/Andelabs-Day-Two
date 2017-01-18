@@ -1,0 +1,13 @@
+text="olly olly in come free"
+
+def words(text):
+  text = text.replace("\n", " ").replace("\t", " ")
+  res = {}
+  words = text.split(" ")
+  for word in words:
+    if word:
+      count = words.count(word)
+      if word.isdigit():
+        word = int(word)
+      res[word] = count
+  return res
